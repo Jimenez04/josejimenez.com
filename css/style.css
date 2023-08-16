@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+:root{
+    /* color */
+    --cian: #324B4C;
+    --lightcian: #068488;
+    --lightblue: #00C6CF;
+    --blue: #121437;
+    --lightgreen: #D9EDDF;
+    --lightgreen2: #DCE9DC; 
+    --white: #FFFFFF; 
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    position: relative;
+    background-color: var(--lightgreen);
+    z-index: -1;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a, button{
+    text-decoration: none;
+    background-color: transparent;
+}
+@font-face {
+    font-family: 'futura_bold';
+    font-display: swap;
+    src: url('../fonts/futura/futura_heavy.ttf');
+}
+a,p,h1,h2,h3,span,label, button{
+    text-rendering: optimizeLegibility;
+}
