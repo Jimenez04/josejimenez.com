@@ -30,6 +30,7 @@ body{
     position: relative;
     background-color: var(--lightgreen);
     z-index: -1;
+    height: 1000vh;
 }
 
 ul, li{
@@ -46,6 +47,21 @@ a, button{
     font-display: swap;
     src: url('../fonts/futura/futura_heavy.ttf');
 }
+@font-face {
+    font-family: 'helvetica_bold';
+    font-display: swap;
+    src: url('../fonts/helvetica/helvetica_bold.ttf');
+}
 a,p,h1,h2,h3,span,label, button{
     text-rendering: optimizeLegibility;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "helvetica_bold";
+    font-size: 2.1875rem;
+    line-height: 35px;
+    color: var(--cian);
 }

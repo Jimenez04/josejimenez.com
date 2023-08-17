@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function change_content(window) { 
     change_active(window);
+    $("html, body").animate({ scrollTop: 0 }, "slow");
     switch (window) {
         case 'about':
             $('#main').load('./components/home.html');

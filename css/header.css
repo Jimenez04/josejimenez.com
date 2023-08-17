@@ -1,6 +1,11 @@
 header{
     margin-top: 20px;
     align-items: end !important;
+    position: fixed;
+    width: 100%;
+}
+.false_header{
+    height: 70px;
 }
 nav{
     height: 50px;
@@ -42,6 +47,9 @@ nav ul li button{
     nav{
         height: 75px;
         width: 468.75px;
+    }
+    .false_header{
+        height: 100px;
     }
     header nav .background{
         border-radius: 37.5px;
