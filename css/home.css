@@ -7,6 +7,7 @@ section.hero{
 .hero-div_info{
     max-width: 318px;
     min-width: 280px;
+    width: 80%;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -22,10 +23,23 @@ section.hero .image img{
     object-fit: cover;
 }
 
+.hero_span-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
 section.hero span{
     font-family: futura_bold;
     color: var(--cian);
     font-size: 0.875rem;
     max-width: 14.75rem;
     line-height: 20px;
+    white-space: pre-line;
+}
+
+section.hero p{
+    font-family: helvetica_regular;
+    color: var(--lightcian);
+    font-size: 0.875rem;
+    line-height: 20px;
+    white-space: pre-line;
 }

@@ -52,6 +52,11 @@ a, button{
     font-display: swap;
     src: url('../fonts/helvetica/helvetica_bold.ttf');
 }
+@font-face {
+    font-family: 'helvetica_regular';
+    font-display: swap;
+    src: url('../fonts/helvetica/helvetica_regular.ttf');
+}
 a,p,h1,h2,h3,span,label, button{
     text-rendering: optimizeLegibility;
     margin: 0;
