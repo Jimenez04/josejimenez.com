@@ -3,6 +3,7 @@ header{
     align-items: end !important;
     position: fixed;
     width: 100%;
+    z-index: 100000;
 }
 .false_header{
     height: 70px;

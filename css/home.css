@@ -1,26 +1,77 @@
 section.hero{
-    height: 100vh;
-    align-items: normal;
-    margin-top: 3.125rem;
+    margin-top: 3.125rem; 
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
 }
-
 .hero-div_info{
     max-width: 318px;
     min-width: 280px;
     width: 80%;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    margin-bottom: 4.6875rem;
+    z-index: 1000;
 }
+/* .hero-div_info_container{
+    height: auto;
+    min-height: 90vh;
+    align-items: start;
+} */
+@media only screen and (min-width: 500px) {
+    section.hero{
+        margin-top: 6.25rem; 
+    }
+    .hero-div_info{
+        max-width: 1200px;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-auto-rows: auto;
+        align-items: center;
+        column-gap: 50px;
+        margin-bottom: 0rem;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .hero-div_info{
+        max-width: 1364px;
+        column-gap: 126px;
+    }
+}
+
 section.hero .image{
     margin: 25px 0 30px 0;
     height: 300px;
 }
-
+@media only screen and (min-width: 500px) {
+    section.hero .image{
+        grid-row: 1/4;
+        grid-column: 2/3;
+        margin:  0;
+        height: auto;
+    }
+}
 section.hero .image img{
     width: 200px;
     height: 300px;
     border-radius: 80px 0 80px 0px;
     object-fit: cover;
+}
+@media only screen and (min-width: 1000px) {
+    section.hero .image img{
+        width: 316.97px;
+        height: 475.56px;
+        border-radius: 150px 0 150px 0px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    section.hero .image img{
+        width: 426px;
+        height: 640px;
+        border-radius: 213px 0 213px 0px;
+    }
 }
 
 .hero_span-container{
@@ -37,9 +88,105 @@ section.hero span{
 }
 
 section.hero p{
-    font-family: helvetica_regular;
+    font-family: helvetica_regular_light;
     color: var(--lightcian);
     font-size: 0.875rem;
-    line-height: 20px;
     white-space: pre-line;
+    line-height: 1.43;
+    letter-spacing: 0.14px;
 }
+
+@media only screen and (min-width: 1000px) {
+    .hero_span-container{
+        margin: 50px 0;
+    }
+
+    section.hero span{
+        font-size: 1.5625rem;
+        line-height: 33px;
+    }
+    
+    section.hero p{
+        font-size: 1.5625rem;
+        line-height: 1.2;
+        letter-spacing: 0.38px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    section.hero span{
+        font-size: 1.875rem;
+        line-height: normal;
+    }
+    
+    section.hero p{
+        font-size: 1.875rem;
+        line-height: 1.33;
+        letter-spacing: 0.45px;
+    }
+}
+
+
+    .home_wave-container{
+        width: 100vw;
+        z-index: 1;
+        position: relative;
+        left: 0;
+        bottom: -15px;
+    }
+    .home-about_me{
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--white);
+    }
+
+
+    #overlay::before,#overlay,#overlay::after{
+        position: absolute;
+        top: -200px;
+        left: 0;
+        content: "";
+        width: 100vw;
+        height: calc(100%  + 200px);
+    }
+    
+    #overlay::after{
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        opacity: .8;
+        background: rgb(217,237,223);
+        background: linear-gradient(180deg, rgba(217,237,223,1) 0%, rgba(220,233,220,1) 60%, rgba(255,255,255,1) 100%);
+    }
+    #overlay::before{
+        z-index: -1;
+        background: linear-gradient(315deg, #00c6cf,#00c6cf,#00c6cf, #068488,#068488,#068488, #324b4c,#324b4c,#324b4c, #00c6cf,#00c6cf , #00c6cf, #068488,#068488,#068488, #324b4c,#324b4c,#324b4c);
+        background-size: 1000% 1000%;
+        
+        -webkit-animation: AnimationN 30s ease infinite;
+        -moz-animation: AnimationNa 30s ease infinite;
+        -o-animation: AnimationNam 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+    }
+    @-webkit-keyframes AnimationN {
+        0%{background-position:0% 4%}
+        50%{background-position:100% 97%}
+        100%{background-position:0% 4%}
+        }
+    
+        @-moz-keyframes AnimationNa {
+            0%{background-position:0% 4%}
+        50%{background-position:100% 97%}
+        100%{background-position:0% 4%}
+        }
+    
+        @-o-keyframes AnimationNam {
+            0%{background-position:0% 4%}
+            50%{background-position:100% 97%}
+            100%{background-position:0% 4%}
+        }
+    
+        @keyframes AnimationName { 
+            0%{background-position:0% 4%}
+        50%{background-position:100% 97%}
+        100%{background-position:0% 4%}
+        }

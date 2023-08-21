@@ -29,8 +29,7 @@
 body{
     position: relative;
     background-color: var(--lightgreen);
-    z-index: -1;
-    height: 1000vh;
+    z-index: -100;
 }
 
 ul, li{
@@ -57,6 +56,11 @@ a, button{
     font-display: swap;
     src: url('../fonts/helvetica/helvetica_regular.ttf');
 }
+@font-face {
+    font-family: 'helvetica_regular_light';
+    font-display: swap;
+    src: url('../fonts/helvetica/helvetica-regularlight.ttf');
+}
 a,p,h1,h2,h3,span,label, button{
     text-rendering: optimizeLegibility;
     margin: 0;
@@ -69,4 +73,15 @@ h1{
     font-size: 2.1875rem;
     line-height: 35px;
     color: var(--cian);
+}
+@media only screen and (min-width: 1000px) {
+    h1{
+        font-size: 5rem;
+        line-height: normal;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    h1{
+        font-size: 6.25rem;
+    }
 }
