@@ -30,7 +30,6 @@ body{
     position: relative;
     background-color: var(--lightgreen);
     z-index: -100;
-    min-height: 800vh;
 }
 
 ul, li{
@@ -60,7 +59,8 @@ a, button{
 @font-face {
     font-family: 'helvetica_regular_light';
     font-display: swap;
-    src: url('../fonts/helvetica/helvetica-regularlight.ttf');
+    /* src: url('../fonts/helvetica/helvetica_regularlight.ttf'); */
+    src: url('../fonts/helvetica/helvetica_regular.ttf');
 }
 a,p,h1,h2,h3,span,label, button{
     text-rendering: optimizeLegibility;
@@ -87,6 +87,23 @@ h1{
     }
 }
 h2{
+    font-family: "helvetica_bold";
+    font-size: 2.1875rem;
+    line-height: 35px;
+    color: var(--cian);
+}
+@media only screen and (min-width: 1000px) {
+    h2{
+        font-size: 5rem;
+        line-height: normal;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    h2{
+        font-size: 6.25rem;
+    }
+}
+h3{
     font-family: "futura_bold";
     font-size: 1.125rem;
     color: var(--lightblue);
@@ -94,13 +111,13 @@ h2{
     max-width: 200px;
 }
 @media only screen and (min-width: 1000px) {
-    h2{
+    h3{
         font-size: 1.375rem;
         max-width: 500px;
     }
 }
 @media only screen and (min-width: 1500px) {
-    h2{
+    h3{
         font-size: 1.875rem;
     }
 }
@@ -108,7 +125,6 @@ h2{
 .max_resolution{
     width: 80vw;
     max-width: 318px;
-    min-width: 280px;
 }
 @media only screen and (min-width: 500px) {
     .max_resolution{
