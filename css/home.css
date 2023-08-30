@@ -293,7 +293,7 @@ section.hero p{
 }
 @media only screen and (min-width: 1000px) {
     .history_container_lines{
-        width: 85vw;
+        width: 85%;
         height: 84%;
     }
     .history_container_item:first-of-type{
