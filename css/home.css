@@ -300,7 +300,7 @@ section.hero p{
         margin-top: 200px!important;
     }
     .more_about_me{
-        margin-top: 400px;
+        margin-top: 300px;
     }
     .wave_history{
         bottom: 600px ;
@@ -314,6 +314,7 @@ section.hero p{
         padding: 82px 108px ;
         border-radius: 260px 0 260px 0;
         margin-top: 80px;
+        background-color: var(--white);
     }
 }
 @media only screen and (min-width: 1500px) {
@@ -378,6 +379,7 @@ section.hero p{
         margin: 0 auto;
         line-height: 1.33;
         letter-spacing: 0.45px;
+        color: var(--lightcian);
     }
 }
 @media only screen and (min-width: 1500px) {
@@ -451,6 +453,9 @@ section.hero p{
 .technologie_items_container_technologies span{
 }
 @media only screen and (min-width: 700px) {
+    #technologies{
+        padding-top: 180px;
+    }
     .technologie_items .item{
         width: 85%;
         max-width: 500px;
